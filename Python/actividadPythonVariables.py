@@ -27,14 +27,11 @@ else:
 
 #Ejercicio 5: Intercambiar valores entre dos variables
 #Descripción: Intercambia los valores de dos variables sin usar una tercera variable.
-a = 19
-b = 0
-if a == 19:
-    a=b
-    print(f"Variable a: {a}")
-if b == 0:
-    b=a
-    print(f"Variable b: {b}")
+a = 5
+b = "hola"
+print(f"\nValores iniciales: a = {a}, b = {b}")
+a, b = b, a  # Intercambio de valores
+print(f"Valores intercambiados: a = {a}, b = {b}")
 
 #Ejercicio 6: Calculadora simple
 #Descripción: Realiza suma, resta, multiplicación y división con dos números ingresados por el usuario
@@ -58,4 +55,26 @@ a = int(input("\nDigite un numero: "))
 b = int(input("Digite un numero: "))
 c = int(input("Digite un numero: "))
 if a>b & a>c:
-    print("")
+    print(f"El numero {a} es mayor que {b} y {c}")
+elif b>a & b>c:
+    print(f"El numero {b} es mayor que {a} y {c}")
+elif c>a & c>b:
+    print(f"El numero {c} es mayor que {a} y {b}")
+else:
+    print("Los numeros son iguales")
+
+#Ejercicio 9: Verificar si un número es múltiplo de otro
+#Descripción: Pide dos números y determina si el primero es múltiplo del segundo.
+x = int(input("\nDigite un numero: "))
+y = int(input("Digite otro numero: "))
+if x % y == 0:
+    print(f"El numero {x} es multiplo de {y}")
+else:
+    print(f"El numero {x} no es multiplo de {y}")
+
+#Ejercicio 10: Salario con bonificación
+#Descripción: Calcula el salario total si un empleado recibe un bono del 10% sobre su salario base.
+S_base = float(input("\nDigite su salario base: "))
+bono = S_base * 0.10
+salario_T = S_base + bono
+print(f"Su salario base es: {S_base} y su bono es: {bono}, por lo tanto su salario total es: {salario_T}")
