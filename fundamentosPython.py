@@ -51,7 +51,7 @@ for i in range(10, -1, -1):
 
 #8. Valor absoluto sin usar abs()
 #Implementa una lógica para obtener el valor absoluto de un número entero sin usar abs().
-x = int(input("\nDigite un numero para conseguir el valor absoluto: "))
+x = int(input("\n\nDigite un numero para conseguir el valor absoluto: "))
 if x < 0:
     x = x*-1
     print(f"Valor absoluto es: {x}")
@@ -195,7 +195,7 @@ elif type(x) == float:
 #Sección 3: Operadores Lógicos (21–30)
 #21. ¿Puede votar?
 # Verifica si una persona puede votar. Debe tener al menos 18 años y tener documento de identidad (True o False).
-x = int(input("\nDigite su edad"))
+x = int(input("\nDigite su edad: "))
 doc = input("Tienes documento? (s/n)").lower()
 if doc == "s":
     if x >= 18:
